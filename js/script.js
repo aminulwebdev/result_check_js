@@ -5,7 +5,7 @@ let CheckResult = document.querySelector(".result")
 let images = document.querySelector(".images")
 
 submitBtn.addEventListener("click", function () {
-    if (getInput.value > 100) {
+    if (getInput.value > 100 || getInput.value < 0) {
         alert("Value should be between 0 and 100");
     } else if (getInput.value >= 90 && getInput.value <= 100) {
         CheckResult.innerHTML = `I am GPA 5 ( A+ )`
