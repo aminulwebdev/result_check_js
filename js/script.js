@@ -4,20 +4,15 @@ let resetBtn = document.querySelector(".resetbtn")
 let CheckResult = document.querySelector(".result")
 let images = document.querySelector(".images")
 
-
-
-
 submitBtn.addEventListener("click", function () {
     if (getInput.value > 100) {
         alert("Value should be between 0 and 100");
     } else if (getInput.value >= 90 && getInput.value <= 100) {
         CheckResult.innerHTML = `I am GPA 5 ( A+ )`
         images.src = "images/m90.jpg"
-
     } else if (getInput.value >= 80 && getInput.value <= 100) {
         CheckResult.innerHTML = `I am GPA 5 ( A+ )`
         images.src = "images/gpa5.jpg"
-
     } else if (getInput.value >= 70 && getInput.value < 80) {
         CheckResult.innerHTML = `I am GPA 4 ( A )`
         images.src = "images/m70.jpg"
@@ -37,7 +32,6 @@ submitBtn.addEventListener("click", function () {
         CheckResult.innerHTML = `Tumi fail`
         images.src = "images/m0.jpg"
     }
-
 })
 
 resetBtn.addEventListener("click", function () {
